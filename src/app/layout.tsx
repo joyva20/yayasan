@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: "FBIS Binawan - Fakultas Bisnis dan Ilmu Sosial Universitas Binawan",
   description:
     "Fakultas Bisnis dan Ilmu Sosial Universitas Binawan - Fakultas unggulan yang berkomitmen menghasilkan lulusan berkualitas internasional dengan dukungan teknologi digital dan karakter yang berakhlak mulia.",
+  icons: {
+    icon: "/logo-fbis.png",
+  },
 };
 
 export default function RootLayout({

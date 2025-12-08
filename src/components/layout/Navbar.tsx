@@ -102,13 +102,6 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* CTA Button Desktop */}
-          <div className="hidden md:block">
-            <button className="bg-white text-[#8B3A3A] px-5 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 transition-colors">
-              Daftar Sekarang
-            </button>
-          </div>
-
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
@@ -186,9 +179,6 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            <button className="w-full mt-4 bg-[#8B3A3A] text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-[#6B2A2A] transition-colors">
-              Daftar Sekarang
-            </button>
           </div>
         </div>
       )}

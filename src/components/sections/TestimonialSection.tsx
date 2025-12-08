@@ -6,6 +6,14 @@ import { testimonials } from "@/data/testimonials";
 export default function TestimonialSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+  };
+
   return (
     <section id="alumni" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
@@ -16,7 +24,50 @@ export default function TestimonialSection() {
           berbagai bidang
         </p>
 
-        <div className="bg-white rounded-xl shadow-lg p-8 max-w-3xl mx-auto">
+        <div className="relative max-w-3xl mx-auto">
+          {/* Left Navigation Button */}
+          <button
+            onClick={handlePrev}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-10 bg-white hover:bg-[#8B3A3A] text-[#8B3A3A] hover:text-white border-2 border-[#8B3A3A] rounded-full p-3 shadow-lg transition-all duration-300 group"
+            aria-label="Previous testimonial"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          {/* Right Navigation Button */}
+          <button
+            onClick={handleNext}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-10 bg-white hover:bg-[#8B3A3A] text-[#8B3A3A] hover:text-white border-2 border-[#8B3A3A] rounded-full p-3 shadow-lg transition-all duration-300 group"
+            aria-label="Next testimonial"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+
+          <div className="bg-white rounded-xl shadow-lg p-8">
           <div className="flex items-start gap-4 mb-6">
             <div className="flex-shrink-0 w-16 h-16 bg-[#A64D4D]/20 rounded-full flex items-center justify-center text-2xl font-bold text-[#8B3A3A]">
               {testimonials[currentIndex].name.charAt(0)}
@@ -63,6 +114,7 @@ export default function TestimonialSection() {
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
+          </div>
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { partners } from "@/data/partners";
 
 export default function PartnershipSection() {
@@ -19,8 +20,14 @@ export default function PartnershipSection() {
               className="bg-white border-2 border-slate-200 rounded-lg p-6 flex items-center justify-center hover:border-[#8B3A3A] hover:shadow-md transition-all"
             >
               <div className="text-center">
-                <div className="w-20 h-20 bg-slate-100 rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <span className="text-xs text-slate-400">Logo</span>
+                <div className="w-32 h-20 relative flex items-center justify-center mx-auto mb-2">
+                  <Image
+                    src={partner.logoSrc}
+                    alt={partner.name}
+                    fill
+                    className="object-contain"
+                    unoptimized
+                  />
                 </div>
                 <p className="text-sm font-medium text-slate-700">
                   {partner.name}
