@@ -49,7 +49,7 @@ export default function Navbar() {
               onClick={() => handleNavClick("#home")}
               className="text-lg font-bold text-white hover:text-slate-200 transition-colors"
             >
-              FBIS Binawan
+              Program Studi Psikologi Binawan
             </button>
           </div>
 
