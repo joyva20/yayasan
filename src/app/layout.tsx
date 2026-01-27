@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FBIS Binawan - Fakultas Bisnis dan Ilmu Sosial Universitas Binawan",
+  title: "Yayasan Al-Kalam Ngali Indonesia",
   description:
-    "Fakultas Bisnis dan Ilmu Sosial Universitas Binawan - Fakultas unggulan yang berkomitmen menghasilkan lulusan berkualitas internasional dengan dukungan teknologi digital dan karakter yang berakhlak mulia.",
+    "Bersama menebar manfaat melalui pendidikan, sosial, dan program kebaikan yang berkelanjutan.",
   icons: {
     icon: [
       {

@@ -24,105 +24,55 @@ export default function StrukturOrganisasiPage() {
         <p className="text-slate-700 text-center max-w-3xl mx-auto mb-6">
           {strukturOrganisasi.orgChartDescription}
         </p>
-        <div className="mt-6 rounded-xl shadow-md overflow-hidden relative aspect-[16/9]">
-          <Image 
-            src="/BAGAN-FBIS.jpg" 
-            alt="Bagan Struktur Organisasi FBIS" 
-            fill
-            className="object-contain bg-white"
-            unoptimized
-          />
+        <div className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-10 text-center">
+          <div className="mx-auto max-w-xl">
+            <div className="text-sm font-semibold text-slate-900">
+              Bagan struktur organisasi akan ditampilkan di sini.
+            </div>
+            <p className="mt-2 text-sm text-slate-600">
+              Silakan unggah/siapkan bagan resmi yayasan, lalu kita bisa pasang di halaman ini.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Pimpinan Fakultas Section */}
+      {/* Pengurus Yayasan Section */}
       <section className="bg-white max-w-5xl mx-auto px-4 py-16">
         <h2 className="text-2xl md:text-3xl font-semibold text-[#25D366] text-center mb-2">
-          Pimpinan Fakultas
+          Pengurus Yayasan
         </h2>
         <p className="text-slate-600 text-center mb-10">
-          Memimpin dengan visi yang jelas dan komitmen tinggi terhadap keunggulan akademik
+          Struktur kepengurusan inti Yayasan Al-Kalam Ngali Indonesia
         </p>
-        
-        <div className="grid gap-10 md:grid-cols-2 items-center">
-          {/* Foto Dekan */}
-          <div>
-            <div className="rounded-xl aspect-[3/4] max-w-sm mx-auto overflow-hidden shadow-lg relative">
-              <Image 
-                src="/ikhwan-hi-res.png" 
-                alt="Dr. Ikhwan HS, SE, MM., M.Si - Dekan FBIS" 
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
 
-          {/* Info Dekan */}
-          <div className="text-center md:text-left">
-            <h3 className="text-2xl md:text-3xl font-bold text-[#25D366] mb-2">
-              {strukturOrganisasi.leader.name}
-            </h3>
-            <p className="text-xl font-semibold text-slate-700 mb-1">
-              {strukturOrganisasi.leader.title}
-            </p>
-            <p className="text-slate-600 mb-6">
-              {strukturOrganisasi.leader.role}
-            </p>
-            <div className="space-y-2 text-slate-700">
-              <p>
-                <span className="font-semibold">Email:</span>{" "}
-                <a 
-                  href={`mailto:${strukturOrganisasi.leader.email}`}
-                  className="text-[#25D366] hover:underline cursor-pointer"
-                >
-                  {strukturOrganisasi.leader.email}
-                </a>
-              </p>
-              <p>
-                <span className="font-semibold">Telepon:</span>{" "}
-                {strukturOrganisasi.leader.phone}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Ketua Program Studi Section */}
-      <section className="bg-white py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-semibold text-[#25D366] text-center mb-2">
-            Ketua Program Studi
-          </h2>
-          <p className="text-slate-600 text-center mb-10">
-            Para pemimpin program studi yang berpengalaman dan berdedikasi tinggi
-          </p>
-
-          <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {strukturOrganisasi.kaprodiList.map((kaprodi, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg hover:border-2 hover:border-[#25D366] transition-all cursor-pointer"
-              >
-                <div className="rounded-lg aspect-[3/4] mb-4 overflow-hidden relative bg-slate-100">
-                  <Image 
-                    src={kaprodi.photo}
-                    alt={kaprodi.name}
-                    fill
-                    className="object-cover"
-                    unoptimized
-                  />
-                </div>
-                <h3 className="font-bold text-[#25D366] mb-2">
-                  {kaprodi.name}
-                </h3>
-                <p className="text-sm text-slate-600">
-                  Ketua Program Studi {kaprodi.program}
-                </p>
-                <p className="text-xs text-slate-500 mt-1">
-                  {kaprodi.program}
-                </p>
+        <div className="grid gap-6 md:grid-cols-3">
+          {strukturOrganisasi.management.map((member) => (
+            <div
+              key={member.title}
+              className="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm"
+            >
+              <div className="mx-auto mb-4 h-14 w-14 rounded-full bg-slate-100 flex items-center justify-center">
+                <span className="text-lg font-semibold text-slate-700">
+                  {member.title.charAt(0)}
+                </span>
               </div>
-            ))}
+              <div className="font-semibold text-slate-900">{member.name}</div>
+              <div className="mt-1 text-sm text-slate-600">{member.title}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
+          <div className="text-sm text-slate-700">
+            <span className="font-semibold">Kontak:</span>{" "}
+            <a
+              href={`mailto:${strukturOrganisasi.leader.email}`}
+              className="text-[#25D366] hover:underline"
+            >
+              {strukturOrganisasi.leader.email}
+            </a>
+            <span className="mx-2 text-slate-400">•</span>
+            <span className="font-semibold">Telepon:</span> {strukturOrganisasi.leader.phone}
           </div>
         </div>
       </section>
@@ -133,7 +83,7 @@ export default function StrukturOrganisasiPage() {
           Struktur Organisasi yang Solid
         </h2>
         <p className="text-slate-700 text-center max-w-3xl mx-auto mb-10">
-          Struktur organisasi Fakultas Psikologi dirancang untuk mendukung efektivitas pengelolaan pendidikan, penelitian, dan pengabdian masyarakat. Setiap posisi memiliki peran strategis dalam mencapai visi fakultas menjadi yang terdepan dalam bidang psikologi dan ilmu sosial.
+          Struktur organisasi yayasan dirancang untuk mendukung efektivitas pengelolaan program dan layanan. Setiap peran memiliki kontribusi yang jelas dalam memastikan kegiatan berjalan amanah, transparan, dan tepat sasaran.
         </p>
 
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">

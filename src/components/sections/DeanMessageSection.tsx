@@ -13,10 +13,10 @@ export default function DeanMessageSection() {
             <div className="w-full max-w-md">
               <div className="aspect-[4/5] rounded-lg overflow-hidden shadow-lg relative">
                 <Image 
-                  src="/ikhwan-hi-res.png" 
+                  src="/logo.png" 
                   alt="Ketua Yayasan" 
                   fill
-                  className="object-cover"
+                  className="object-contain bg-white"
                 />
               </div>
             </div>

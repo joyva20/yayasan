@@ -18,7 +18,7 @@ export default function VisiMisiPage() {
       {/* Main Content Section */}
       <section className="bg-white max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-center text-xl md:text-2xl font-semibold text-[#25D366] mb-2">
-          Landasan Filosofi dan Pengembangan Fakultas
+          Landasan Nilai dan Arah Gerak Yayasan
         </h2>
 
         <div className="grid gap-10 md:grid-cols-3 mt-10">

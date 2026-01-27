@@ -12,7 +12,7 @@ export const sdmPage: SDMPageData = {
   heroTitle: "SDM",
   groups: [
     {
-      title: "Program Studi Kesejahteraan Sosial",
+      title: "Divisi Program Sosial",
       items: [
         "Dr. Ahmad Fauzi, S.Sos., M.Si.",
         "Rina Marlina, S.Sos., M.A.",
@@ -22,7 +22,7 @@ export const sdmPage: SDMPageData = {
       ]
     },
     {
-      title: "Program Studi Psikologi",
+      title: "Divisi Pendidikan & Pembinaan",
       items: [
         "Dr. Dwi Putri Handayani, M.Psi., Psikolog",
         "Prof. Dr. Yusuf Rahman, M.Psi.",
@@ -33,7 +33,7 @@ export const sdmPage: SDMPageData = {
       ]
     },
     {
-      title: "Program Studi Manajemen",
+      title: "Divisi Operasional & Keuangan",
       items: [
         "Dr. Hendra Wijaya, SE., MM.",
         "Nurul Aini, SE., M.Ak.",
@@ -43,7 +43,7 @@ export const sdmPage: SDMPageData = {
       ]
     },
     {
-      title: "Program Studi Bisnis Digital",
+      title: "Divisi Humas & Kemitraan",
       items: [
         "Dr. Rini Susilowati, S.Kom., M.Kom.",
         "Eko Prasetyo, S.T., M.M.",
@@ -53,7 +53,7 @@ export const sdmPage: SDMPageData = {
       ]
     },
     {
-      title: "Tendik",
+      title: "Relawan",
       items: [
         "Slamet Riyadi, S.Sos.",
         "Wati Kusuma, S.Pd.",

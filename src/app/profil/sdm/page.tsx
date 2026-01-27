@@ -10,7 +10,7 @@ export default function SDMPage() {
             {sdmPage.heroTitle}
           </h1>
           <p className="mt-4 text-white text-sm md:text-base">
-            Sumber daya manusia yang mendukung kualitas pendidikan dan layanan akademik.
+            Sumber daya manusia yang mendukung pelaksanaan program dan layanan yayasan.
           </p>
         </div>
       </section>
@@ -18,10 +18,10 @@ export default function SDMPage() {
       {/* SDM Cards Section */}
       <section className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-xl md:text-2xl font-semibold text-center text-[#25D366] mb-2">
-          SDM Fakultas
+          SDM Yayasan
         </h2>
         <p className="text-center text-slate-600 mb-10">
-          Dosen dan tenaga kependidikan yang berdedikasi tinggi
+          Pengurus, pelaksana program, dan relawan yang berdedikasi
         </p>
 
         {/* Grid Cards */}

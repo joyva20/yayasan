@@ -14,10 +14,10 @@ export type CoreValuesPageData = {
 };
 
 export const coreValuesPage: CoreValuesPageData = {
-  heroTitle: "Core Values Fakultas Psikologi",
-  heroSubtitle: "Nilai-nilai fundamental yang menjadi landasan dalam membentuk karakter unggul, kolaboratif, inovatif, dan bertanggung jawab bagi seluruh civitas akademika.",
+  heroTitle: "Core Values Yayasan",
+  heroSubtitle: "Nilai-nilai utama yang menjadi landasan dalam membentuk karakter amanah, kolaboratif, inovatif, dan bertanggung jawab dalam setiap program yayasan.",
   introTitle: "Lima Pilar Fundamental",
-  introText: "Fakultas Psikologi Universitas Binawan memiliki lima pilar fundamental yang menjadi dasar pengembangan karakter dan kompetensi mahasiswa. Nilai-nilai ini terintegrasi dalam setiap aspek pembelajaran, penelitian, dan pengabdian masyarakat untuk menghasilkan lulusan yang berkualitas dan berdaya saing tinggi.",
+  introText: "Yayasan Al-Kalam Ngali Indonesia memiliki lima pilar fundamental yang menjadi dasar penguatan karakter, tata kelola, dan kualitas layanan. Nilai-nilai ini terintegrasi dalam perencanaan program, pelaksanaan kegiatan, dan pelaporan agar manfaat yang dihasilkan semakin nyata dan berkelanjutan.",
   pillars: [
     {
       title: "Excellence",
@@ -37,5 +37,5 @@ export const coreValuesPage: CoreValuesPageData = {
     }
   ],
   commitmentTitle: "Komitmen Kami",
-  commitmentText: "Kami berkomitmen untuk terus mengembangkan dan mengimplementasikan nilai-nilai fundamental ini dalam setiap aspek kehidupan akademik. Melalui pendidikan yang berkualitas, penelitian yang inovatif, dan pengabdian masyarakat yang berdampak, kami berupaya membentuk generasi yang tidak hanya unggul secara intelektual, tetapi juga memiliki karakter yang kuat, empati yang tinggi, dan dedikasi untuk berkontribusi positif bagi masyarakat dan bangsa."
+  commitmentText: "Kami berkomitmen untuk menerapkan nilai-nilai fundamental ini dalam setiap aspek kerja yayasan. Melalui program pendidikan, sosial, dan pemberdayaan yang tepat sasaran, kami berupaya menghadirkan dampak yang berkelanjutan dan bermanfaat bagi masyarakat."
 };

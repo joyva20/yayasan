@@ -39,7 +39,7 @@ export default function Navbar() {
             <div className="flex items-center justify-center">
               <Image 
                 src="/logo.png" 
-                alt="FBIS Binawan Logo" 
+                alt="Logo Yayasan Al-Kalam" 
                 width={56}
                 height={56}
                 className="object-contain"

@@ -21,10 +21,10 @@ export default function Footer() {
             </a>{" "}
             atau email{" "}
             <a
-              href="mailto:fbis@binawan.ac.id"
+              href="mailto:contoh@contoh.ac.id"
               className="font-semibold text-slate-900 hover:text-slate-700"
             >
-              fbis@binawan.ac.id
+              contoh@contoh.ac.id
             </a>{" "}
             Siap Memulai Perjalanan Akademik Anda?
           </p>
@@ -44,14 +44,14 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Kolom Kiri - Informasi Fakultas */}
+          {/* Kolom Kiri - Informasi Yayasan */}
           <div className="space-y-4">
             <div className="flex items-start gap-4">
               {/* Logo */}
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image 
                   src="/logo.png" 
-                  alt="FBIS Logo" 
+                  alt="Logo Yayasan" 
                   width={56}
                   height={56}
                   className="object-contain"
@@ -73,21 +73,21 @@ export default function Footer() {
               <p className="pt-2">
                 <span className="font-medium">Email:</span>{" "}
                 <a
-                  href="mailto:bisnisdigital@binawan.ac.id"
+                  href="mailto:contoh@contoh.ac.id"
                   className="hover:text-slate-900 transition-colors"
                 >
-                  bisnisdigital@binawan.ac.id
+                  contoh@contoh.ac.id
                 </a>
               </p>
               <p>
                 <span className="font-medium">WhatsApp:</span>{" "}
                 <a
-                  href="https://wa.me/6281293871569"
+                  href="https://wa.me/6281234567890"
                   className="hover:text-slate-900 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  0812-9387-1569
+                  0812-3456-7890
                 </a>
               </p>
             </div>

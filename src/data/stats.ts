@@ -17,7 +17,7 @@ export const stats = [
     icon: "users",
   },
   {
-    label: "Mitra & Komunitas",
+    label: "Komunitas Terlibat",
     value: "20+",
     icon: "globe",
   },
