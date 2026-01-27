@@ -4,7 +4,7 @@ export default function SDMPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="bg-[#A64D4D] py-12">
+      <section className="bg-[#1DA851] py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-2xl md:text-3xl font-semibold text-white">
             {sdmPage.heroTitle}
@@ -17,7 +17,7 @@ export default function SDMPage() {
 
       {/* SDM Cards Section */}
       <section className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-xl md:text-2xl font-semibold text-center text-[#8B3A3A] mb-2">
+        <h2 className="text-xl md:text-2xl font-semibold text-center text-[#25D366] mb-2">
           SDM Fakultas
         </h2>
         <p className="text-center text-slate-600 mb-10">

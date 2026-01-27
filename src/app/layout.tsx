@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/logo-fbis.png",
+        url: "/logo.png",
         type: "image/png",
       },
     ],
-    shortcut: "/logo-fbis.png",
-    apple: "/logo-fbis.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
 };
 

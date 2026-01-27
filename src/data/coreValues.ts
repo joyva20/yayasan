@@ -8,23 +8,23 @@ export type CoreValue = {
 
 export const coreValues: CoreValue[] = [
   {
-    title: "Internasional",
+    title: "Amanah",
     description:
-      "Kurikulum berstandar internasional dengan peluang pertukaran mahasiswa",
+      "Menjaga kepercayaan melalui integritas, transparansi, dan akuntabilitas.",
     icon: "globe",
     colorClass: "amber",
   },
   {
-    title: "Digital",
+    title: "Peduli",
     description:
-      "Pembelajaran dengan teknologi terdepan dan platform digital modern",
+      "Mendahulukan empati dan kebermanfaatan untuk sesama.",
     icon: "computer",
     colorClass: "blue",
   },
   {
-    title: "Berakhlak",
+    title: "Berkelanjutan",
     description:
-      "Pembentukan karakter dan nilai-nilai akhlak mulia dalam setiap aspek pendidikan",
+      "Membangun program yang konsisten, terukur, dan berdampak jangka panjang.",
     icon: "badge-check",
     colorClass: "green",
   },

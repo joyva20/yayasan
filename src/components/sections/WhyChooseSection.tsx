@@ -4,7 +4,7 @@ export default function WhyChooseSection() {
   return (
     <section id="keunggulan" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="section-title">Mengapa Memilih FBIS?</h2>
+        <h2 className="section-title">Fokus & Program Utama</h2>
         <div className="section-divider"></div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
@@ -12,7 +12,7 @@ export default function WhyChooseSection() {
             <div key={index} className="flex gap-4">
               <div className="flex-shrink-0 mt-1">
                 <svg
-                  className="w-6 h-6 text-[#8B3A3A]"
+                  className="w-6 h-6 text-[#25D366]"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -34,9 +34,12 @@ export default function WhyChooseSection() {
         </div>
 
         <div className="mt-12 text-center">
-          <button className="bg-[#8B3A3A] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#6B2A2A] transition-colors">
-            Pelajari Lebih Lanjut
-          </button>
+          <a
+            href="#kontak"
+            className="inline-block bg-[#25D366] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#1DA851] transition-colors"
+          >
+            Hubungi Kami
+          </a>
         </div>
       </div>
     </section>

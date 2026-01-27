@@ -4,25 +4,25 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#8B3A3A] border-t border-[#6B2A2A]">
+    <footer className="bg-white border-t border-slate-200">
       {/* CTA Section di Footer */}
-      <div className="bg-[#6B2A2A] py-12">
+      <div className="bg-white py-12 border-b border-slate-200">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+          <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
             Butuh informasi lebih lanjut?
           </h3>
-          <p className="text-slate-200 mb-6">
+          <p className="text-slate-600 mb-6">
             Hubungi kami di{" "}
             <a
               href="tel:08129387-1569"
-              className="font-semibold text-white hover:text-slate-300"
+              className="font-semibold text-slate-900 hover:text-slate-700"
             >
               0812-9387-1569
             </a>{" "}
             atau email{" "}
             <a
               href="mailto:fbis@binawan.ac.id"
-              className="font-semibold text-white hover:text-slate-300"
+              className="font-semibold text-slate-900 hover:text-slate-700"
             >
               fbis@binawan.ac.id
             </a>{" "}
@@ -43,29 +43,29 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Kolom Kiri - Informasi Fakultas */}
           <div className="space-y-4">
             <div className="flex items-start gap-4">
-              {/* Logo FBIS dengan circle putih */}
-              <div className="flex-shrink-0 bg-white rounded-full p-3 shadow-lg flex items-center justify-center">
+              {/* Logo */}
+              <div className="flex-shrink-0 flex items-center justify-center">
                 <Image 
-                  src="/logo-fbis.png" 
+                  src="/logo.png" 
                   alt="FBIS Logo" 
-                  width={48}
-                  height={48}
+                  width={56}
+                  height={56}
                   className="object-contain"
                   unoptimized
                 />
               </div>
               {/* Teks */}
               <div className="flex-1">
-                <h3 className="text-lg font-bold text-white">
-                  FAKULTAS BISNIS DAN ILMU SOSIAL - UNIVERSITAS BINAWAN
+                <h3 className="text-lg font-bold text-slate-900">
+                  Yayasan Al-Kalam Ngali Indonesia
                 </h3>
               </div>
             </div>
-            <div className="space-y-2 text-slate-200 text-sm">
+            <div className="space-y-2 text-slate-600 text-sm">
               <p>
                 Jl. Kalibata Raya - Dewi Sartika, No. 25-30 Jakarta Timur - DKI
                 Jakarta 13630
@@ -74,7 +74,7 @@ export default function Footer() {
                 <span className="font-medium">Email:</span>{" "}
                 <a
                   href="mailto:bisnisdigital@binawan.ac.id"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-slate-900 transition-colors"
                 >
                   bisnisdigital@binawan.ac.id
                 </a>
@@ -83,7 +83,7 @@ export default function Footer() {
                 <span className="font-medium">WhatsApp:</span>{" "}
                 <a
                   href="https://wa.me/6281293871569"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-slate-900 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -95,77 +95,45 @@ export default function Footer() {
 
           {/* Kolom Tengah - Link Cepat */}
           <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white">Link Cepat</h3>
+            <h3 className="text-lg font-bold text-slate-900">Link Cepat</h3>
             <div className="space-y-2">
               <a
-                href="#universitas"
-                className="block text-slate-200 hover:text-white text-sm transition-colors"
+                href="#home"
+                className="block text-slate-600 hover:text-slate-900 text-sm transition-colors"
               >
-                Universitas Binawan
+                Beranda
               </a>
               <a
-                href="#fakultas"
-                className="block text-slate-200 hover:text-white text-sm transition-colors"
+                href="#sambutan"
+                className="block text-slate-600 hover:text-slate-900 text-sm transition-colors"
               >
-                Fakultas Bisnis dan Ilmu Sosial
+                Sambutan Ketua Pengurus
               </a>
               <a
-                href="#pmb"
-                className="block text-slate-200 hover:text-white text-sm transition-colors"
+                href="#sejarah"
+                className="block text-slate-600 hover:text-slate-900 text-sm transition-colors"
               >
-                Penerimaan Mahasiswa Baru
+                Sejarah
               </a>
-            </div>
-          </div>
-
-          {/* Kolom Kanan - Logo Partner (Piramida) */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-white">Partner Kami</h3>
-            <div className="flex flex-col items-center gap-4">
-              {/* Top - Binawan Logo */}
-              <div className="w-40 h-20 bg-white rounded-lg shadow-md flex items-center justify-center p-3">
-                <Image 
-                  src="/binawan-logo.svg" 
-                  alt="Binawan University Logo" 
-                  width={120}
-                  height={60}
-                  className="object-contain"
-                  unoptimized
-                />
-              </div>
-              
-              {/* Bottom - 2 Logos Side by Side */}
-              <div className="flex gap-4">
-                <div className="w-32 h-20 bg-white rounded-lg shadow-md flex items-center justify-center p-3">
-                  <Image 
-                    src="/diktisaintek.svg" 
-                    alt="Diktisaintek Logo" 
-                    width={100}
-                    height={60}
-                    className="object-contain"
-                    unoptimized
-                  />
-                </div>
-                <div className="w-32 h-20 bg-white rounded-lg shadow-md flex items-center justify-center p-3">
-                  <Image 
-                    src="/binawan-ic.png" 
-                    alt="Binawan IC Logo" 
-                    width={100}
-                    height={60}
-                    className="object-contain"
-                    unoptimized
-                  />
-                </div>
-              </div>
+              <a
+                href="#struktur-organisasi"
+                className="block text-slate-600 hover:text-slate-900 text-sm transition-colors"
+              >
+                Struktur Organisasi
+              </a>
+              <a
+                href="#kontak"
+                className="block text-slate-600 hover:text-slate-900 text-sm transition-colors"
+              >
+                Kontak
+              </a>
             </div>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 pt-8 border-t border-slate-500">
-          <p className="text-center text-slate-200 text-sm">
-            © {currentYear} FBIS Binawan
-          </p>
+        <div className="mt-8 pt-8 border-t border-slate-200">
+          <p className="text-center text-slate-500 text-sm">© {currentYear} Yayasan Al-Kalam Ngali Indonesia</p>
         </div>
       </div>
     </footer>

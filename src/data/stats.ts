@@ -7,23 +7,23 @@ export type StatItem = {
 
 export const stats = [
   {
-    label: "Program Studi",
-    value: "4",
+    label: "Program Berjalan",
+    value: "10+",
     icon: "graduation-cap",
   },
   {
-    label: "Mahasiswa Aktif",
-    value: "2000+",
+    label: "Penerima Manfaat",
+    value: "500+",
     icon: "users",
   },
   {
-    label: "Mitra Internasional",
-    value: "50+",
+    label: "Mitra & Komunitas",
+    value: "20+",
     icon: "globe",
   },
   {
-    label: "Tingkat Kelulusan",
-    value: "95%",
+    label: "Relawan Aktif",
+    value: "50+",
     icon: "user-check",
   },
 ];

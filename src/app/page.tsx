@@ -1,10 +1,11 @@
 import HeroSection from "@/components/sections/HeroSection";
 import DeanMessageSection from "@/components/sections/DeanMessageSection";
 import AboutSection from "@/components/sections/AboutSection";
+import HistorySection from "@/components/sections/HistorySection";
+import VisionMissionSection from "@/components/sections/VisionMissionSection";
+import OrganizationStructureSection from "@/components/sections/OrganizationStructureSection";
 import WhyChooseSection from "@/components/sections/WhyChooseSection";
 import StatsSection from "@/components/sections/StatsSection";
-import TestimonialSection from "@/components/sections/TestimonialSection";
-import PartnershipSection from "@/components/sections/PartnershipSection";
 import CTASection from "@/components/sections/CTASection";
 
 export default function Home() {
@@ -13,10 +14,11 @@ export default function Home() {
       <HeroSection />
       <DeanMessageSection />
       <AboutSection />
+      <HistorySection />
+      <VisionMissionSection />
+      <OrganizationStructureSection />
       <WhyChooseSection />
       <StatsSection />
-      <TestimonialSection />
-      <PartnershipSection />
       <CTASection />
     </>
   );

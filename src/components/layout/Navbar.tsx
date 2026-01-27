@@ -31,37 +31,37 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#8B3A3A] border-b border-[#6B2A2A] shadow-sm">
+    <nav className="sticky top-0 z-50 bg-[#25D366] border-b border-[#1DA851] shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="grid grid-cols-[1fr_auto] md:grid-cols-[auto_1fr_auto] items-center py-4 md:py-5 min-h-24 md:min-h-28 gap-4">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-3">
-            <div className="bg-white rounded-full p-2 flex items-center justify-center">
+            <div className="flex items-center justify-center">
               <Image 
-                src="/logo-fbis.png" 
+                src="/logo.png" 
                 alt="FBIS Binawan Logo" 
-                width={32}
-                height={32}
+                width={56}
+                height={56}
                 className="object-contain"
               />
             </div>
             <button
               onClick={() => handleNavClick("#home")}
-              className="text-lg font-bold text-white hover:text-slate-200 transition-colors"
+              className="text-lg md:text-xl lg:text-2xl font-bold text-white hover:text-slate-200 transition-colors leading-tight text-left"
             >
-              Program Studi Psikologi Binawan
+              Yayasan Al-Kalam Ngali Indonesia
             </button>
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex items-center space-x-8">
+          <ul className="hidden md:flex items-center justify-center gap-10">
             {navLinks.map((link) => (
               <li key={link.label} className="relative">
                 {link.children ? (
                   <>
                     <button
                       onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
-                      className="inline-flex items-center gap-1 text-sm font-medium text-white hover:text-slate-200 transition-colors"
+                      className="inline-flex items-center gap-2 text-base md:text-lg font-semibold text-white hover:text-slate-200 transition-colors"
                     >
                       {link.label}
                       <span className="text-xs">▾</span>
@@ -73,15 +73,22 @@ export default function Navbar() {
                           className="fixed inset-0 z-10"
                           onClick={() => setOpenDropdown(null)}
                         />
-                        <div className="absolute left-0 mt-2 w-60 rounded-lg bg-white border border-slate-200 shadow-lg py-2 z-50">
+                        <div className="absolute left-0 mt-2 w-72 rounded-lg bg-white border border-slate-200 shadow-lg py-2 z-50">
                           {link.children.map((child) => (
                             <button
                               key={child.label}
                               onClick={() => {
+                                if (child.disabled) return;
                                 handleNavClick(child.href);
                                 setOpenDropdown(null);
                               }}
-                              className="block w-full text-left px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 transition-colors"
+                              className={
+                                child.disabled
+                                  ? "block w-full text-left px-4 py-2 text-base text-slate-400 cursor-not-allowed"
+                                  : "block w-full text-left px-4 py-2 text-base text-slate-700 hover:bg-slate-100 transition-colors"
+                              }
+                              aria-disabled={child.disabled ? true : undefined}
+                              disabled={child.disabled}
                             >
                               {child.label}
                             </button>
@@ -93,7 +100,7 @@ export default function Navbar() {
                 ) : (
                   <button
                     onClick={() => handleNavClick(link.href!)}
-                    className="text-white hover:text-slate-200 transition-colors text-sm font-medium"
+                    className="text-white hover:text-slate-200 transition-colors text-base md:text-lg font-semibold"
                   >
                     {link.label}
                   </button>
@@ -151,13 +158,13 @@ export default function Navbar() {
                       handleNavClick(link.href!);
                       setIsMenuOpen(false);
                     }}
-                    className="block w-full text-left px-3 py-2 text-slate-700 hover:text-[#8B3A3A] hover:bg-slate-50 rounded-md text-sm font-medium transition-colors"
+                    className="block w-full text-left px-3 py-3 text-slate-700 hover:text-[#25D366] hover:bg-slate-50 rounded-md text-base font-semibold transition-colors"
                   >
                     {link.label}
                   </button>
                 )}
                 {!link.href && (
-                  <div className="px-3 py-2 text-sm font-semibold text-slate-800">
+                  <div className="px-3 py-3 text-base font-bold text-slate-800">
                     {link.label}
                   </div>
                 )}
@@ -167,10 +174,17 @@ export default function Navbar() {
                       <button
                         key={child.label}
                         onClick={() => {
+                          if (child.disabled) return;
                           handleNavClick(child.href);
                           setIsMenuOpen(false);
                         }}
-                        className="block w-full text-left py-2 text-sm text-slate-600 hover:text-[#8B3A3A] transition-colors"
+                        className={
+                          child.disabled
+                            ? "block w-full text-left py-2 text-base text-slate-400 cursor-not-allowed"
+                            : "block w-full text-left py-2 text-base text-slate-600 hover:text-[#25D366] transition-colors"
+                        }
+                        aria-disabled={child.disabled ? true : undefined}
+                        disabled={child.disabled}
                       >
                         {child.label}
                       </button>

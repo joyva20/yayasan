@@ -5,7 +5,7 @@ export default function StrukturOrganisasiPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="bg-[#A64D4D] py-12">
+      <section className="bg-[#1DA851] py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-semibold text-white">
             {strukturOrganisasi.heroTitle}
@@ -18,7 +18,7 @@ export default function StrukturOrganisasiPage() {
 
       {/* Bagan Organisasi Section */}
       <section className="bg-white max-w-5xl mx-auto px-4 py-12">
-        <h2 className="text-2xl md:text-3xl font-semibold text-[#8B3A3A] text-center mb-4">
+        <h2 className="text-2xl md:text-3xl font-semibold text-[#25D366] text-center mb-4">
           Bagan Organisasi
         </h2>
         <p className="text-slate-700 text-center max-w-3xl mx-auto mb-6">
@@ -37,7 +37,7 @@ export default function StrukturOrganisasiPage() {
 
       {/* Pimpinan Fakultas Section */}
       <section className="bg-white max-w-5xl mx-auto px-4 py-16">
-        <h2 className="text-2xl md:text-3xl font-semibold text-[#8B3A3A] text-center mb-2">
+        <h2 className="text-2xl md:text-3xl font-semibold text-[#25D366] text-center mb-2">
           Pimpinan Fakultas
         </h2>
         <p className="text-slate-600 text-center mb-10">
@@ -59,7 +59,7 @@ export default function StrukturOrganisasiPage() {
 
           {/* Info Dekan */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl md:text-3xl font-bold text-[#8B3A3A] mb-2">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#25D366] mb-2">
               {strukturOrganisasi.leader.name}
             </h3>
             <p className="text-xl font-semibold text-slate-700 mb-1">
@@ -73,7 +73,7 @@ export default function StrukturOrganisasiPage() {
                 <span className="font-semibold">Email:</span>{" "}
                 <a 
                   href={`mailto:${strukturOrganisasi.leader.email}`}
-                  className="text-[#8B3A3A] hover:underline cursor-pointer"
+                  className="text-[#25D366] hover:underline cursor-pointer"
                 >
                   {strukturOrganisasi.leader.email}
                 </a>
@@ -90,7 +90,7 @@ export default function StrukturOrganisasiPage() {
       {/* Ketua Program Studi Section */}
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-semibold text-[#8B3A3A] text-center mb-2">
+          <h2 className="text-2xl md:text-3xl font-semibold text-[#25D366] text-center mb-2">
             Ketua Program Studi
           </h2>
           <p className="text-slate-600 text-center mb-10">
@@ -101,7 +101,7 @@ export default function StrukturOrganisasiPage() {
             {strukturOrganisasi.kaprodiList.map((kaprodi, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg hover:border-2 hover:border-[#8B3A3A] transition-all cursor-pointer"
+                className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg hover:border-2 hover:border-[#25D366] transition-all cursor-pointer"
               >
                 <div className="rounded-lg aspect-[3/4] mb-4 overflow-hidden relative bg-slate-100">
                   <Image 
@@ -112,7 +112,7 @@ export default function StrukturOrganisasiPage() {
                     unoptimized
                   />
                 </div>
-                <h3 className="font-bold text-[#8B3A3A] mb-2">
+                <h3 className="font-bold text-[#25D366] mb-2">
                   {kaprodi.name}
                 </h3>
                 <p className="text-sm text-slate-600">
@@ -129,7 +129,7 @@ export default function StrukturOrganisasiPage() {
 
       {/* Statistik Organisasi Section */}
       <section className="bg-white max-w-5xl mx-auto px-4 py-16">
-        <h2 className="text-2xl md:text-3xl font-semibold text-[#8B3A3A] text-center mb-4">
+        <h2 className="text-2xl md:text-3xl font-semibold text-[#25D366] text-center mb-4">
           Struktur Organisasi yang Solid
         </h2>
         <p className="text-slate-700 text-center max-w-3xl mx-auto mb-10">
@@ -139,10 +139,10 @@ export default function StrukturOrganisasiPage() {
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {strukturOrganisasi.stats.map((item) => (
             <div key={item.label} className="text-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#8B3A3A] text-white text-lg font-semibold">
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white text-lg font-semibold">
                 {item.value}
               </div>
-              <div className="font-semibold uppercase tracking-wide text-[#8B3A3A]">
+              <div className="font-semibold uppercase tracking-wide text-[#25D366]">
                 {item.label}
               </div>
               <p className="mt-2 text-sm text-slate-600">{item.description}</p>

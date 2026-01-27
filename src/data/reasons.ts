@@ -6,23 +6,23 @@ export type Reason = {
 
 export const reasons: Reason[] = [
   {
-    title: "Kurikulum Internasional",
+    title: "Pendidikan & Pembinaan",
     description:
-      "Kurikulum yang disesuaikan dengan standar internasional dan kebutuhan industri global.",
+      "Mendukung akses belajar, pembinaan karakter, dan peningkatan kualitas SDM.",
   },
   {
-    title: "Pembelajaran Digital",
+    title: "Kegiatan Sosial",
     description:
-      "Memanfaatkan teknologi terdepan untuk pengalaman pembelajaran yang optimal.",
+      "Program bantuan dan pendampingan sosial yang tepat sasaran dan berkelanjutan.",
   },
   {
-    title: "Pembentukan Karakter",
+    title: "Transparansi & Amanah",
     description:
-      "Mengintegrasikan nilai-nilai akhlak mulia dalam setiap aspek pendidikan.",
+      "Mengutamakan akuntabilitas, dokumentasi kegiatan, dan pelaporan yang jelas.",
   },
   {
-    title: "Jaringan Alumni Global",
+    title: "Kolaborasi Mitra",
     description:
-      "Memiliki jaringan alumni yang tersebar di berbagai negara dan industri.",
+      "Bekerja sama dengan komunitas, donatur, dan institusi untuk dampak yang lebih luas.",
   },
 ];

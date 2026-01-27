@@ -4,7 +4,7 @@ export default function CoreValuesPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="bg-[#A64D4D] py-12">
+      <section className="bg-[#1DA851] py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-2xl md:text-3xl font-semibold text-white">
             {coreValuesPage.heroTitle}
@@ -17,7 +17,7 @@ export default function CoreValuesPage() {
 
       {/* Lima Pilar Fundamental Section */}
       <section className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center text-[#8B3A3A]">
+        <h2 className="text-2xl md:text-3xl font-semibold text-center text-[#25D366]">
           {coreValuesPage.introTitle}
         </h2>
         <p className="mt-4 text-center text-slate-700 max-w-3xl mx-auto">
@@ -35,7 +35,7 @@ export default function CoreValuesPage() {
               <div className="flex h-24 w-24 items-center justify-center border-2 border-yellow-400 rounded-lg">
                 <span className="text-2xl text-yellow-500">★</span>
               </div>
-              <h3 className="text-lg font-semibold text-[#8B3A3A]">
+              <h3 className="text-lg font-semibold text-[#25D366]">
                 {pillar.title}
               </h3>
               <p className="text-sm text-slate-700">{pillar.description}</p>
@@ -47,7 +47,7 @@ export default function CoreValuesPage() {
       {/* Komitmen Kami Section */}
       <section className="bg-slate-100 py-12 mt-8">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-xl md:text-2xl font-semibold text-[#8B3A3A] mb-4">
+          <h2 className="text-xl md:text-2xl font-semibold text-[#25D366] mb-4">
             {coreValuesPage.commitmentTitle}
           </h2>
           <p className="text-sm md:text-base text-slate-700 leading-relaxed">

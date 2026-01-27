@@ -5,18 +5,20 @@ export default function CTASection() {
     <section id="kontak" className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-          Siap Memulai Perjalanan Akademik Anda?
+          Mari Berkolaborasi untuk Kebaikan
         </h2>
         <div className="section-divider"></div>
         <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-          Tetap terhubung dengan aktivitas terbaru FBIS melalui media sosial
-          kami
+          Hubungi kami untuk informasi program, kemitraan, atau dukungan donasi
+          dan relawan.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <a
-            href="#daftar"
-            className="inline-flex items-center justify-center gap-2 bg-[#8B3A3A] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#6B2A2A] transition-colors"
+            href="https://wa.me/6281293871569?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Yayasan%20Al-Kalam"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#1DA851] transition-colors"
           >
             <svg
               className="w-5 h-5"
@@ -25,11 +27,11 @@ export default function CTASection() {
             >
               <path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z" />
             </svg>
-            Daftar Sekarang
+            WhatsApp Kami
           </a>
           <a
-            href="#program-studi"
-            className="inline-flex items-center justify-center gap-2 bg-white text-slate-700 px-8 py-3 rounded-lg font-medium border-2 border-slate-300 hover:border-[#8B3A3A] hover:text-[#8B3A3A] transition-colors"
+            href="mailto:info@example.com"
+            className="inline-flex items-center justify-center gap-2 bg-white text-slate-700 px-8 py-3 rounded-lg font-medium border-2 border-slate-300 hover:border-[#25D366] hover:text-[#25D366] transition-colors"
           >
             <svg
               className="w-5 h-5"
@@ -44,7 +46,7 @@ export default function CTASection() {
                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
               />
             </svg>
-            Lihat Program Studi
+            Kirim Email
           </a>
         </div>
 
@@ -53,16 +55,16 @@ export default function CTASection() {
           {coreValues.map((value, index) => {
             const colorClasses = {
               amber: {
-                bg: "bg-[#8B3A3A]/10",
-                text: "text-[#8B3A3A]",
+                bg: "bg-[#25D366]/10",
+                text: "text-[#25D366]",
               },
               blue: {
-                bg: "bg-[#8B3A3A]/10",
-                text: "text-[#8B3A3A]",
+                bg: "bg-[#25D366]/10",
+                text: "text-[#25D366]",
               },
               green: {
-                bg: "bg-[#8B3A3A]/10",
-                text: "text-[#8B3A3A]",
+                bg: "bg-[#25D366]/10",
+                text: "text-[#25D366]",
               },
             };
 
