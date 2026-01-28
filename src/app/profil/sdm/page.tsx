@@ -9,7 +9,7 @@ export default function SDMPage() {
           <h1 className="text-2xl md:text-3xl font-semibold text-white">
             {sdmPage.heroTitle}
           </h1>
-          <p className="mt-4 text-white text-sm md:text-base">
+          <p className="mt-4 text-white text-base md:text-lg">
             Sumber daya manusia yang mendukung pelaksanaan program dan layanan yayasan.
           </p>
         </div>
@@ -20,7 +20,7 @@ export default function SDMPage() {
         <h2 className="text-xl md:text-2xl font-semibold text-center text-[#25D366] mb-2">
           SDM Yayasan
         </h2>
-        <p className="text-center text-slate-600 mb-10">
+        <p className="text-center text-slate-600 text-lg md:text-xl mb-10">
           Pengurus, pelaksana program, dan relawan yang berdedikasi
         </p>
 
@@ -31,10 +31,10 @@ export default function SDMPage() {
               key={group.title}
               className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-md transition-shadow"
             >
-              <h3 className="mb-3 text-sm font-semibold text-slate-800">
+              <h3 className="mb-3 text-base font-semibold text-slate-800">
                 {group.title}
               </h3>
-              <ol className="list-decimal list-inside space-y-1 text-sm text-slate-700">
+              <ol className="list-decimal list-inside space-y-1 text-base text-slate-700">
                 {group.items.map((name) => (
                   <li key={name}>{name}</li>
                 ))}

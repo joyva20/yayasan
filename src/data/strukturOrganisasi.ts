@@ -9,6 +9,9 @@ export type Leader = {
 export type ManagementMember = {
   name: string;
   title: string;
+  subtitle?: string;
+  bio?: string[];
+  imageSrc?: string;
 };
 
 export type OrgStat = {
@@ -27,9 +30,9 @@ export type StrukturOrganisasiData = {
 };
 
 export const strukturOrganisasi: StrukturOrganisasiData = {
-  heroTitle: "Struktur Organisasi Yayasan",
+  heroTitle: "Pengurus Yayasan",
   heroSubtitle: "Kepengurusan yang amanah untuk dampak berkelanjutan",
-  orgChartDescription: "Struktur organisasi Yayasan Al-Kalam Ngali Indonesia disusun untuk mendukung efektivitas pengelolaan program pendidikan, sosial, dan pemberdayaan. Setiap peran memiliki tanggung jawab yang jelas untuk memastikan kegiatan berjalan transparan dan tepat sasaran.",
+  orgChartDescription: "Pengurus Yayasan Al-Kalam Ngali Indonesia disusun untuk mendukung efektivitas pengelolaan program pendidikan, sosial, dan pemberdayaan. Setiap peran memiliki tanggung jawab yang jelas untuk memastikan kegiatan berjalan transparan dan tepat sasaran.",
   leader: {
     name: "Nama Ketua Pengurus",
     title: "Ketua Pengurus",
@@ -38,9 +41,36 @@ export const strukturOrganisasi: StrukturOrganisasiData = {
     phone: "+62 812-9387-1569",
   },
   management: [
-    { name: "Nama Ketua Pengurus", title: "Ketua Pengurus" },
-    { name: "Nama Sekretaris", title: "Sekretaris" },
-    { name: "Nama Bendahara", title: "Bendahara" },
+    {
+      name: "Nama Ketua Pengurus",
+      title: "Ketua Pengurus",
+      subtitle: "Ketua Pengurus",
+      imageSrc: "/ikhwan.jpeg",
+      bio: [
+        "Profil singkat Ketua Pengurus akan ditampilkan di sini.",
+        "Silakan kirimkan foto dan biografi singkat (2–4 paragraf) untuk ditampilkan seperti contoh.",
+      ],
+    },
+    {
+      name: "Nama Sekretaris",
+      title: "Sekretaris",
+      subtitle: "Sekretaris",
+      imageSrc: "/logo.png",
+      bio: [
+        "Profil singkat Sekretaris akan ditampilkan di sini.",
+        "Silakan kirimkan foto dan biografi singkat (1–3 paragraf).",
+      ],
+    },
+    {
+      name: "Nama Bendahara",
+      title: "Bendahara",
+      subtitle: "Bendahara",
+      imageSrc: "/logo.png",
+      bio: [
+        "Profil singkat Bendahara akan ditampilkan di sini.",
+        "Silakan kirimkan foto dan biografi singkat (1–3 paragraf).",
+      ],
+    },
   ],
   stats: [
     {

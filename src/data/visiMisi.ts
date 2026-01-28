@@ -11,20 +11,18 @@ export type VisiMisiData = {
 export const visiMisi: VisiMisiData = {
   title: "Visi & Misi Yayasan",
   subtitle: "Landasan nilai dan arah gerak Yayasan Al-Kalam Ngali Indonesia",
-  visi: "Menjadi yayasan yang amanah, profesional, dan berdampak dalam bidang pendidikan dan sosial kemasyarakatan.",
+  visi: "Mewujudkan kemaslahatan umat melalui pengamalan nilai-nilai keislaman & keindonesiaan.",
   misi: [
-    "Menjalankan program pendidikan dan pembinaan yang relevan dengan kebutuhan masyarakat.",
-    "Mengembangkan program sosial yang tepat sasaran dan berkelanjutan.",
-    "Membangun kolaborasi dengan donatur, relawan, dan mitra untuk memperluas dampak.",
-    "Menjaga tata kelola yang transparan, akuntabel, dan bertanggung jawab.",
+    "Menciptakan human capital yang unggul & ihsan melalui pendidikan & pelatihan.",
+    "Menciptakan dan mengembangkan program social entrepreneurship melalui usaha produktif.",
+    "Melakukan kolaborasi dengan berbagai stakeholders melalui ekosistem sosial, kemanusiaan, lingkungan & keagamaan.",
   ],
   tujuan: [
-    "Memperluas akses pendidikan dan pembinaan bagi masyarakat yang membutuhkan.",
-    "Meningkatkan kualitas program sosial melalui pendampingan yang terukur.",
-    "Mendorong keterlibatan relawan dan mitra dalam program-program kebaikan.",
-    "Menguatkan tata kelola yayasan agar amanah dan berkelanjutan.",
+    "Meningkatkan kualitas SDM (human capital) yang unggul dan berakhlak.",
+    "Menguatkan kemandirian melalui program usaha produktif berbasis sosial.",
+    "Memperluas jejaring kolaborasi untuk program sosial, kemanusiaan, lingkungan, dan keagamaan.",
   ],
   commitmentTitle: "Komitmen Kami",
   commitmentText:
-    "Visi dan misi yayasan menjadi panduan dalam setiap program dan pelayanan. Kami berkomitmen menjaga amanah, memperkuat kolaborasi, dan menghadirkan dampak yang nyata bagi masyarakat.",
+    "Visi dan misi yayasan menjadi panduan dalam setiap program dan pelayanan. Kami berkomitmen menjaga amanah, memperkuat kolaborasi, dan menghadirkan dampak yang nyata bagi umat dan masyarakat.",
 };

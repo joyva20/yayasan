@@ -32,7 +32,7 @@ body {
 /* Custom utility classes untuk section styling */
 @layer utilities {
   .section-title {
-    @apply text-3xl md:text-4xl font-semibold text-center mb-4;
+    @apply text-4xl md:text-5xl font-semibold text-center mb-4;
   }
 
   .section-divider {

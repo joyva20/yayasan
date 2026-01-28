@@ -9,20 +9,19 @@ export default function VisionMissionSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
           <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-8">
-            <h3 className="text-xl font-semibold text-slate-900 mb-3">Visi</h3>
-            <p className="text-slate-700 leading-relaxed">{visiMisi.visi}</p>
+            <h3 className="text-2xl font-semibold text-[#25D366] mb-3">Visi</h3>
+            <p className="text-slate-700 text-lg md:text-xl leading-relaxed">{visiMisi.visi}</p>
           </div>
 
           <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-8">
-            <h3 className="text-xl font-semibold text-slate-900 mb-3">Misi</h3>
-            <ul className="space-y-3 text-slate-700">
+            <h3 className="text-2xl font-semibold text-[#25D366] mb-3">Misi</h3>
+            <ol className="list-decimal pl-6 space-y-4 text-slate-700 text-lg md:text-xl">
               {visiMisi.misi.map((item, index) => (
-                <li key={index} className="flex gap-3">
-                  <span className="mt-1 text-[#25D366]">✔</span>
-                  <span className="leading-relaxed">{item}</span>
+                <li key={index} className="leading-relaxed">
+                  {item}
                 </li>
               ))}
-            </ul>
+            </ol>
           </div>
         </div>
       </div>

@@ -24,10 +24,10 @@ export default function WhyChooseSection() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-semibold text-lg text-slate-900 mb-2">
+                <h3 className="font-semibold text-xl text-slate-900 mb-2">
                   {reason.title}
                 </h3>
-                <p className="text-slate-600">{reason.description}</p>
+                <p className="text-slate-600 text-lg md:text-xl">{reason.description}</p>
               </div>
             </div>
           ))}

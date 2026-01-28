@@ -9,33 +9,53 @@ export type CoreValuesPageData = {
   introTitle: string;
   introText: string;
   pillars: CoreValuePillar[];
+  spiritTitle: string;
+  spiritItems: string[];
   commitmentTitle: string;
   commitmentText: string;
 };
 
 export const coreValuesPage: CoreValuesPageData = {
   heroTitle: "Core Values Yayasan",
-  heroSubtitle: "Nilai-nilai utama yang menjadi landasan dalam membentuk karakter amanah, kolaboratif, inovatif, dan bertanggung jawab dalam setiap program yayasan.",
+  heroSubtitle:
+    "Nilai-nilai utama yang menjadi landasan dalam membangun program, layanan, dan tata kelola Yayasan Al-Kalam Ngali Indonesia.",
   introTitle: "Lima Pilar Fundamental",
-  introText: "Yayasan Al-Kalam Ngali Indonesia memiliki lima pilar fundamental yang menjadi dasar penguatan karakter, tata kelola, dan kualitas layanan. Nilai-nilai ini terintegrasi dalam perencanaan program, pelaksanaan kegiatan, dan pelaporan agar manfaat yang dihasilkan semakin nyata dan berkelanjutan.",
+  introText:
+    "Yayasan Al-Kalam Ngali Indonesia memiliki lima pilar fundamental yang menjadi dasar penguatan karakter, tata kelola, dan kualitas layanan. Nilai-nilai ini kami terapkan dalam perencanaan program, pelaksanaan kegiatan, hingga pelaporan agar manfaat yang dihasilkan semakin nyata dan berkelanjutan.",
   pillars: [
     {
-      title: "Excellence",
-      description: "Komitmen untuk mencapai standar tertinggi dalam pendidikan, penelitian, dan layanan akademik dengan terus berinovasi dan meningkatkan kualitas."
+      title: "Kebajikan",
+      description:
+        "Berorientasi pada manfaat dan kebaikan yang bisa dirasakan masyarakat melalui program yang tepat sasaran."
     },
     {
-      title: "Collaboration",
-      description: "Membangun kerja sama yang solid antar civitas akademika, institusi, dan masyarakat untuk menciptakan ekosistem pembelajaran yang saling mendukung."
+      title: "Keberkahan",
+      description:
+        "Menumbuhkan nilai kebaikan yang berkelanjutan, bukan hanya selesai di kegiatan tetapi berbuah dampak jangka panjang."
     },
     {
-      title: "Innovation",
-      description: "Mendorong kreativitas dan pemikiran out-of-the-box dalam menghadapi tantangan global serta mengembangkan solusi yang relevan dan berkelanjutan."
+      title: "Kerukunan",
+      description:
+        "Menjaga harmoni dan persatuan, membangun ruang kolaborasi yang saling menghormati dalam keberagaman."
     },
     {
-      title: "Responsibility",
-      description: "Bertanggung jawab terhadap dampak sosial, lingkungan, dan profesional dari setiap tindakan dan keputusan yang diambil sebagai insan akademik."
+      title: "Silaturahim",
+      description:
+        "Memperkuat hubungan kekeluargaan, jejaring, dan kerja sama untuk memperluas kebaikan dan kebermanfaatan."
+    },
+    {
+      title: "Profesional",
+      description:
+        "Mengutamakan integritas, disiplin, dan akuntabilitas agar program berjalan efektif, rapi, dan terpercaya."
     }
   ],
+  spiritTitle: "Spirit Al-Kalam",
+  spiritItems: [
+    "Ummatan Wasathan",
+    "Amar Ma'ruf Nahi Munkar",
+    "Khairu Ummah",
+  ],
   commitmentTitle: "Komitmen Kami",
-  commitmentText: "Kami berkomitmen untuk menerapkan nilai-nilai fundamental ini dalam setiap aspek kerja yayasan. Melalui program pendidikan, sosial, dan pemberdayaan yang tepat sasaran, kami berupaya menghadirkan dampak yang berkelanjutan dan bermanfaat bagi masyarakat."
+  commitmentText:
+    "Kami berkomitmen menerapkan nilai-nilai ini dalam setiap aspek kerja yayasan. Melalui pendidikan dan pelatihan, pengembangan program sosial entrepreneurship, serta kolaborasi lintas pihak, kami berupaya menghadirkan dampak yang bermanfaat bagi umat dan masyarakat."
 };

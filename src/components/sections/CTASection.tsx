@@ -4,54 +4,64 @@ export default function CTASection() {
   return (
     <section id="kontak" className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-          Mari Berkolaborasi untuk Kebaikan
-        </h2>
-        <div className="section-divider"></div>
-        <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-          Hubungi kami untuk informasi program, kemitraan, atau dukungan donasi
-          dan relawan.
-        </p>
+        <div className="rounded-3xl border border-slate-200 bg-slate-50 px-6 py-10 md:px-10 md:py-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            Mari Berkolaborasi untuk Kebaikan
+          </h2>
+          <div className="section-divider"></div>
+          <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-2xl mx-auto">
+            Hubungi kami untuk informasi program, kemitraan, atau dukungan donasi
+            dan relawan.
+          </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <a
-            href="https://wa.me/6281293871569?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Yayasan%20Al-Kalam"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#1DA851] transition-colors"
-          >
-            <svg
-              className="w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://wa.me/6281293871569?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Yayasan%20Al-Kalam"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#1DA851] transition-colors"
             >
-              <path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z" />
-            </svg>
-            WhatsApp Kami
-          </a>
-          <a
-            href="mailto:info@example.com"
-            className="inline-flex items-center justify-center gap-2 bg-white text-slate-700 px-8 py-3 rounded-lg font-medium border-2 border-slate-300 hover:border-[#25D366] hover:text-[#25D366] transition-colors"
-          >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+              <svg
+                className="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z" />
+              </svg>
+              WhatsApp Kami
+            </a>
+            <a
+              href="mailto:contoh@contoh.ac.id"
+              className="inline-flex items-center justify-center gap-2 bg-white text-slate-700 px-8 py-3 rounded-lg font-medium border-2 border-slate-300 hover:border-[#25D366] hover:text-[#25D366] transition-colors"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              />
-            </svg>
-            Kirim Email
-          </a>
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              Kirim Email
+            </a>
+          </div>
         </div>
 
         {/* Core Values */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+        <div id="core-values" className="mt-16 scroll-mt-32">
+          <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">
+            Core Values
+          </h3>
+          <p className="text-slate-600 text-lg md:text-xl mb-10 max-w-3xl mx-auto">
+            Lima poin di bawah ini adalah nilai inti (core values) Yayasan Al-Kalam Ngali Indonesia.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {coreValues.map((value, index) => {
             const colorClasses = {
               amber: {
@@ -121,13 +131,42 @@ export default function CTASection() {
                 >
                   {icons[value.icon] || icons.globe}
                 </div>
-                <h3 className="font-semibold text-lg text-slate-900 mb-2">
+                <h3 className="font-semibold text-xl text-slate-900 mb-2">
                   {value.title}
                 </h3>
-                <p className="text-slate-600 text-sm">{value.description}</p>
+                <p className="text-slate-600 text-base">{value.description}</p>
               </div>
             );
           })}
+          </div>
+        </div>
+
+        {/* Spirit AlKalam */}
+        <div className="mt-12 mx-auto max-w-3xl rounded-2xl border border-slate-200 bg-white p-8 text-left shadow-sm">
+          <div className="font-bold text-slate-900">SPIRIT ALKALAM</div>
+          <ul className="mt-4 space-y-3 text-slate-700">
+            {["Umatan Washatan", "Amal Ma'ruf Nahi Mungkar", "Khoruh Ummah"].map(
+              (item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <svg
+                    className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#25D366]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={3}
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span className="leading-relaxed">{item}</span>
+                </li>
+              )
+            )}
+          </ul>
         </div>
       </div>
     </section>

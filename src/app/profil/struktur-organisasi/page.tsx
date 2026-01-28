@@ -10,7 +10,7 @@ export default function StrukturOrganisasiPage() {
           <h1 className="text-3xl md:text-4xl font-semibold text-white">
             {strukturOrganisasi.heroTitle}
           </h1>
-          <p className="mt-4 text-white text-lg">
+          <p className="mt-4 text-white text-xl md:text-2xl">
             {strukturOrganisasi.heroSubtitle}
           </p>
         </div>
@@ -26,10 +26,10 @@ export default function StrukturOrganisasiPage() {
         </p>
         <div className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-10 text-center">
           <div className="mx-auto max-w-xl">
-            <div className="text-sm font-semibold text-slate-900">
-              Bagan struktur organisasi akan ditampilkan di sini.
+            <div className="text-base md:text-lg font-semibold text-slate-900">
+              Bagan Pengurus akan ditampilkan di sini.
             </div>
-            <p className="mt-2 text-sm text-slate-600">
+            <p className="mt-2 text-base md:text-lg text-slate-600">
               Silakan unggah/siapkan bagan resmi yayasan, lalu kita bisa pasang di halaman ini.
             </p>
           </div>
@@ -41,29 +41,59 @@ export default function StrukturOrganisasiPage() {
         <h2 className="text-2xl md:text-3xl font-semibold text-[#25D366] text-center mb-2">
           Pengurus Yayasan
         </h2>
-        <p className="text-slate-600 text-center mb-10">
+        <p className="text-slate-600 text-center text-lg md:text-xl mb-10">
           Struktur kepengurusan inti Yayasan Al-Kalam Ngali Indonesia
         </p>
 
-        <div className="grid gap-6 md:grid-cols-3">
-          {strukturOrganisasi.management.map((member) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-12">
+          {strukturOrganisasi.management.map((member, index) => (
             <div
-              key={member.title}
-              className="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm"
+              key={`${member.title}-${index}`}
+              className={
+                strukturOrganisasi.management.length % 2 === 1 &&
+                index === strukturOrganisasi.management.length - 1
+                  ? "md:col-span-2"
+                  : undefined
+              }
             >
-              <div className="mx-auto mb-4 h-14 w-14 rounded-full bg-slate-100 flex items-center justify-center">
-                <span className="text-lg font-semibold text-slate-700">
-                  {member.title.charAt(0)}
-                </span>
+              <div className="flex flex-col sm:flex-row items-start gap-8">
+                <div className="relative h-36 w-36 flex-shrink-0 overflow-hidden rounded-full bg-slate-100">
+                  <Image
+                    src={member.imageSrc || "/logo.png"}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                    sizes="144px"
+                    unoptimized
+                  />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl md:text-2xl font-bold text-slate-900">
+                    {member.name}
+                  </h3>
+                  <div className="mt-2 text-slate-500 italic">
+                    {member.subtitle || member.title}
+                  </div>
+                  <div className="mt-3 h-1 w-12 bg-[#25D366]" />
+                  <div className="mt-4 space-y-4 text-slate-600 text-base md:text-lg leading-relaxed">
+                    {(member.bio && member.bio.length > 0
+                      ? member.bio
+                      : [
+                          "Profil pengurus akan ditampilkan di sini.",
+                          "Silakan kirimkan foto dan biografi singkat untuk ditambahkan.",
+                        ]
+                    ).map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                </div>
               </div>
-              <div className="font-semibold text-slate-900">{member.name}</div>
-              <div className="mt-1 text-sm text-slate-600">{member.title}</div>
             </div>
           ))}
         </div>
 
         <div className="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
-          <div className="text-sm text-slate-700">
+          <div className="text-base md:text-lg text-slate-700">
             <span className="font-semibold">Kontak:</span>{" "}
             <a
               href={`mailto:${strukturOrganisasi.leader.email}`}
@@ -80,10 +110,10 @@ export default function StrukturOrganisasiPage() {
       {/* Statistik Organisasi Section */}
       <section className="bg-white max-w-5xl mx-auto px-4 py-16">
         <h2 className="text-2xl md:text-3xl font-semibold text-[#25D366] text-center mb-4">
-          Struktur Organisasi yang Solid
+          Pengurus Yayasan yang Solid
         </h2>
         <p className="text-slate-700 text-center max-w-3xl mx-auto mb-10">
-          Struktur organisasi yayasan dirancang untuk mendukung efektivitas pengelolaan program dan layanan. Setiap peran memiliki kontribusi yang jelas dalam memastikan kegiatan berjalan amanah, transparan, dan tepat sasaran.
+             Pengurus Yayasan dirancang untuk mendukung efektivitas pengelolaan program dan layanan. Setiap peran memiliki kontribusi yang jelas dalam memastikan kegiatan berjalan amanah, transparan, dan tepat sasaran.
         </p>
 
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -95,7 +125,7 @@ export default function StrukturOrganisasiPage() {
               <div className="font-semibold uppercase tracking-wide text-[#25D366]">
                 {item.label}
               </div>
-              <p className="mt-2 text-sm text-slate-600">{item.description}</p>
+              <p className="mt-2 text-base md:text-lg text-slate-600">{item.description}</p>
             </div>
           ))}
         </div>

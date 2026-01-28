@@ -8,23 +8,37 @@ export type CoreValue = {
 
 export const coreValues: CoreValue[] = [
   {
-    title: "Amanah",
+    title: "Kebajikan",
     description:
-      "Menjaga kepercayaan melalui integritas, transparansi, dan akuntabilitas.",
+      "Menebarkan manfaat dan kebaikan nyata dalam setiap program dan pelayanan.",
+    icon: "badge-check",
+    colorClass: "green",
+  },
+  {
+    title: "Keberkahan",
+    description:
+      "Menghadirkan nilai tambah yang dirasakan luas dan membawa kebaikan berkelanjutan.",
     icon: "globe",
     colorClass: "amber",
   },
   {
-    title: "Peduli",
+    title: "Kerukunan",
     description:
-      "Mendahulukan empati dan kebermanfaatan untuk sesama.",
+      "Menjaga harmoni, saling menghormati, dan menguatkan persatuan dalam keberagaman.",
     icon: "computer",
     colorClass: "blue",
   },
   {
-    title: "Berkelanjutan",
+    title: "Silaturahim",
     description:
-      "Membangun program yang konsisten, terukur, dan berdampak jangka panjang.",
+      "Menguatkan hubungan, kepedulian, dan kolaborasi yang menumbuhkan kepercayaan.",
+    icon: "globe",
+    colorClass: "amber",
+  },
+  {
+    title: "Profesional",
+    description:
+      "Bekerja terukur, disiplin, dan bertanggung jawab untuk hasil yang optimal.",
     icon: "badge-check",
     colorClass: "green",
   },

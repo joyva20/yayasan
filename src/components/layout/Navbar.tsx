@@ -36,14 +36,16 @@ export default function Navbar() {
         <div className="grid grid-cols-[1fr_auto] md:grid-cols-[auto_1fr_auto] items-center py-4 md:py-5 min-h-24 md:min-h-28 gap-4">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-3">
-            <div className="flex items-center justify-center">
-              <Image 
-                src="/logo.png" 
-                alt="Logo Yayasan Al-Kalam" 
-                width={56}
-                height={56}
-                className="object-contain"
-              />
+            <div className="flex items-center justify-center rounded-xl bg-white border border-white/60 shadow-sm h-20 w-28 md:h-24 md:w-32 p-2 md:p-3">
+              <div className="relative w-full h-full">
+                <Image
+                  src="/logo.png"
+                  alt="Logo Yayasan Al-Kalam"
+                  fill
+                  sizes="(max-width: 768px) 80px, 96px"
+                  className="object-contain"
+                />
+              </div>
             </div>
             <button
               onClick={() => handleNavClick("#home")}

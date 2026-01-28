@@ -28,7 +28,7 @@ export default function VisiMisiPage() {
               <span className="text-4xl">⚙️</span>
             </div>
             <h3 className="text-2xl font-bold text-[#25D366] mb-4">VISI</h3>
-            <p className="text-slate-700 leading-relaxed">
+            <p className="text-[#1DA851] leading-relaxed">
               {visiMisi.visi}
             </p>
           </div>
@@ -39,14 +39,13 @@ export default function VisiMisiPage() {
               <span className="text-4xl">👥</span>
             </div>
             <h3 className="text-2xl font-bold text-[#25D366] mb-4">MISI</h3>
-            <ul className="space-y-2 mt-3 text-left">
+            <ol className="list-decimal pl-6 space-y-2 mt-3 text-left">
               {visiMisi.misi.map((item, index) => (
-                <li key={index} className="flex items-start gap-2 text-slate-700">
-                  <span className="text-[#25D366] font-bold mt-0.5">✔</span>
-                  <span className="text-sm leading-relaxed">{item}</span>
+                <li key={index} className="text-[#1DA851]">
+                  <span className="text-base md:text-lg leading-relaxed">{item}</span>
                 </li>
               ))}
-            </ul>
+            </ol>
           </div>
 
           {/* Kolom Tujuan */}
@@ -57,9 +56,9 @@ export default function VisiMisiPage() {
             <h3 className="text-2xl font-bold text-[#25D366] mb-4">TUJUAN</h3>
             <ul className="space-y-2 mt-3 text-left">
               {visiMisi.tujuan.map((item, index) => (
-                <li key={index} className="flex items-start gap-2 text-slate-700">
+                <li key={index} className="flex items-start gap-2 text-[#1DA851]">
                   <span className="text-[#25D366] font-bold mt-0.5">✔</span>
-                  <span className="text-sm leading-relaxed">{item}</span>
+                  <span className="text-base md:text-lg leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>

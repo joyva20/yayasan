@@ -65,7 +65,7 @@ export default function StatsSection() {
               <div className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
                 {stat.value}
               </div>
-              <div className="text-sm text-slate-600">{stat.label}</div>
+              <div className="text-base md:text-lg text-slate-600">{stat.label}</div>
             </div>
           ))}
         </div>

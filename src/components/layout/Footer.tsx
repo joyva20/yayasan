@@ -6,12 +6,12 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-slate-200">
       {/* CTA Section di Footer */}
-      <div className="bg-white py-12 border-b border-slate-200">
+      <div className="bg-slate-50 py-12 border-b border-slate-200">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
             Butuh informasi lebih lanjut?
           </h3>
-          <p className="text-slate-600 mb-6">
+          <p className="text-slate-600 text-lg md:text-xl mb-6">
             Hubungi kami di{" "}
             <a
               href="tel:08129387-1569"
@@ -26,7 +26,7 @@ export default function Footer() {
             >
               contoh@contoh.ac.id
             </a>{" "}
-            Siap Memulai Perjalanan Akademik Anda?
+            Siap berkolaborasi untuk kebaikan?
           </p>
           <a
             href="https://wa.me/6281293871569"
@@ -48,24 +48,24 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-start gap-4">
               {/* Logo */}
-              <div className="flex-shrink-0 flex items-center justify-center">
+              <div className="flex-shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 shadow-sm h-16 w-16 p-2">
                 <Image 
                   src="/logo.png" 
                   alt="Logo Yayasan" 
-                  width={56}
-                  height={56}
+                  width={44}
+                  height={44}
                   className="object-contain"
                   unoptimized
                 />
               </div>
               {/* Teks */}
               <div className="flex-1">
-                <h3 className="text-lg font-bold text-slate-900">
+                <h3 className="text-xl font-bold text-slate-900">
                   Yayasan Al-Kalam Ngali Indonesia
                 </h3>
               </div>
             </div>
-            <div className="space-y-2 text-slate-600 text-sm">
+            <div className="space-y-2 text-slate-600 text-base">
               <p>
                 Jl. Kalibata Raya - Dewi Sartika, No. 25-30 Jakarta Timur - DKI
                 Jakarta 13630
@@ -82,12 +82,12 @@ export default function Footer() {
               <p>
                 <span className="font-medium">WhatsApp:</span>{" "}
                 <a
-                  href="https://wa.me/6281234567890"
+                  href="https://wa.me/6281293871569"
                   className="hover:text-slate-900 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  0812-3456-7890
+                  0812-9387-1569
                 </a>
               </p>
             </div>
@@ -95,35 +95,35 @@ export default function Footer() {
 
           {/* Kolom Tengah - Link Cepat */}
           <div className="space-y-4">
-            <h3 className="text-lg font-bold text-slate-900">Link Cepat</h3>
+            <h3 className="text-xl font-bold text-slate-900">Link Cepat</h3>
             <div className="space-y-2">
               <a
                 href="#home"
-                className="block text-slate-600 hover:text-slate-900 text-sm transition-colors"
+                className="block text-slate-600 hover:text-slate-900 text-base transition-colors"
               >
                 Beranda
               </a>
               <a
                 href="#sambutan"
-                className="block text-slate-600 hover:text-slate-900 text-sm transition-colors"
+                className="block text-slate-600 hover:text-slate-900 text-base transition-colors"
               >
-                Sambutan Ketua Pengurus
+                Sambutan Pengurus
               </a>
               <a
-                href="#sejarah"
-                className="block text-slate-600 hover:text-slate-900 text-sm transition-colors"
+                href="#latar-belakang"
+                className="block text-slate-600 hover:text-slate-900 text-base transition-colors"
               >
-                Sejarah
+                Latar Belakang
               </a>
               <a
                 href="#struktur-organisasi"
-                className="block text-slate-600 hover:text-slate-900 text-sm transition-colors"
+                className="block text-slate-600 hover:text-slate-900 text-base transition-colors"
               >
-                Struktur Organisasi
+                Pengurus Yayasan
               </a>
               <a
                 href="#kontak"
-                className="block text-slate-600 hover:text-slate-900 text-sm transition-colors"
+                className="block text-slate-600 hover:text-slate-900 text-base transition-colors"
               >
                 Kontak
               </a>
@@ -133,7 +133,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-slate-200">
-          <p className="text-center text-slate-500 text-sm">© {currentYear} Yayasan Al-Kalam Ngali Indonesia</p>
+          <p className="text-center text-slate-500 text-base">© {currentYear} Yayasan Al-Kalam Ngali Indonesia</p>
         </div>
       </div>
     </footer>

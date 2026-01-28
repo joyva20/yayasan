@@ -4,7 +4,7 @@ export default function DeanMessageSection() {
   return (
     <section id="sambutan" className="py-16 bg-slate-50">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="section-title">Sambutan Ketua Pengurus</h2>
+        <h2 className="section-title">Sambutan Pengurus</h2>
         <div className="section-divider"></div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-12">
@@ -13,7 +13,7 @@ export default function DeanMessageSection() {
             <div className="w-full max-w-md">
               <div className="aspect-[4/5] rounded-lg overflow-hidden shadow-lg relative">
                 <Image 
-                  src="/logo.png" 
+                  src="/leader-1.jpeg" 
                   alt="Ketua Yayasan" 
                   fill
                   className="object-contain bg-white"
@@ -25,15 +25,15 @@ export default function DeanMessageSection() {
           {/* Kolom Kanan - Sambutan */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">
+              <h3 className="text-3xl font-bold text-slate-900 mb-2">
                 Ketua Pengurus
               </h3>
-              <p className="text-lg text-[#25D366] font-semibold">
+              <p className="text-xl text-[#25D366] font-semibold">
                 Yayasan Al-Kalam Ngali Indonesia
               </p>
             </div>
 
-            <div className="space-y-4 text-slate-600 leading-relaxed">
+            <div className="space-y-4 text-slate-600 text-lg md:text-xl leading-relaxed">
               <p>
                 &ldquo;Selamat datang di Yayasan Al-Kalam Ngali Indonesia. Kami
                 berkomitmen menghadirkan program yang tepat sasaran, transparan,
@@ -58,7 +58,7 @@ export default function DeanMessageSection() {
                 href="#struktur-organisasi"
                 className="inline-block bg-white text-[#25D366] border-2 border-[#25D366] px-6 py-3 rounded-lg text-center font-medium hover:bg-[#25D366] hover:text-white transition-colors"
               >
-                Lihat Struktur Organisasi
+                Lihat Pengurus
               </a>
             </div>
           </div>

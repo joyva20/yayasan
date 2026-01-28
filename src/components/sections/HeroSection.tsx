@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 const hero = {
-  image: "/logo.png",
+  image: "/foto-bersama.jpeg",
   imageAlt: "Banner Yayasan",
   title: "Yayasan Al-Kalam Ngali Indonesia",
   subtitle:
@@ -18,13 +18,21 @@ export default function HeroSection() {
     >
       {/* Background Image */}
       <div className="absolute inset-0">
+        {/* Blurred cover layer to avoid side bars */}
         <Image
           src={hero.image}
           alt={hero.imageAlt}
           fill
-          className="object-contain bg-white"
+          className="object-cover blur-2xl scale-110"
           sizes="100vw"
           priority
+        />
+        <Image
+          src={hero.image}
+          alt={hero.imageAlt}
+          fill
+          className="object-contain"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-slate-900/50" />
       </div>
@@ -39,10 +47,10 @@ export default function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#tentang-kami"
+            href="#latar-belakang"
             className="inline-block bg-[#25D366] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#1DA851] transition-colors shadow-lg"
           >
-            Tentang Yayasan
+            Latar Belakang
           </a>
           <a
             href="#kontak"

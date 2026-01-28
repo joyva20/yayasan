@@ -9,7 +9,7 @@ export default function CoreValuesPage() {
           <h1 className="text-2xl md:text-3xl font-semibold text-white">
             {coreValuesPage.heroTitle}
           </h1>
-          <p className="mt-4 text-white text-sm md:text-base">
+          <p className="mt-4 text-white text-base md:text-lg">
             {coreValuesPage.heroSubtitle}
           </p>
         </div>
@@ -25,7 +25,7 @@ export default function CoreValuesPage() {
         </p>
 
         {/* Grid Pillars */}
-        <div className="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           {coreValuesPage.pillars.map((pillar) => (
             <div
               key={pillar.title}
@@ -38,9 +38,26 @@ export default function CoreValuesPage() {
               <h3 className="text-lg font-semibold text-[#25D366]">
                 {pillar.title}
               </h3>
-              <p className="text-sm text-slate-700">{pillar.description}</p>
+              <p className="text-base text-slate-700">{pillar.description}</p>
             </div>
           ))}
+        </div>
+
+        {/* Spirit */}
+        <div className="mt-14 rounded-2xl border border-slate-200 bg-white p-8 text-center">
+          <h3 className="text-xl md:text-2xl font-semibold text-[#25D366]">
+            {coreValuesPage.spiritTitle}
+          </h3>
+          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+            {coreValuesPage.spiritItems.map((item) => (
+              <span
+                key={item}
+                className="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-base text-slate-700"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -50,7 +67,7 @@ export default function CoreValuesPage() {
           <h2 className="text-xl md:text-2xl font-semibold text-[#25D366] mb-4">
             {coreValuesPage.commitmentTitle}
           </h2>
-          <p className="text-sm md:text-base text-slate-700 leading-relaxed">
+          <p className="text-base md:text-lg text-slate-700 leading-relaxed">
             {coreValuesPage.commitmentText}
           </p>
         </div>
