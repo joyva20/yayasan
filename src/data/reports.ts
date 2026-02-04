@@ -43,7 +43,7 @@ export const laporanKeuangan: ReportItem[] = [
   {
     year: 2022,
     title: "Laporan Keuangan dan Auditor Independen 2022",
-    coverImageSrc: "/logo-fix.png",
+    coverImageSrc: "/logo-fix.jpeg",
     disabled: true,
   },
 ];
