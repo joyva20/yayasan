@@ -1,11 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  allowedDevOrigins: [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://10.10.15.229:3000",
-  ],
+  // Dev-only: allow accessing the dev server via LAN IP without /_next/* being blocked.
+  // Next.js matches on hostname (no scheme/port).
+  allowedDevOrigins: ["10.10.15.229"],
 };
 
 export default nextConfig;
