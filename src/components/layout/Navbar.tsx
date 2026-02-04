@@ -39,7 +39,7 @@ export default function Navbar() {
             <div className="flex items-center justify-center rounded-xl bg-white border border-white/60 shadow-sm h-20 w-28 md:h-24 md:w-32 p-2 md:p-3">
               <div className="relative w-full h-full">
                 <Image
-                  src="/logo.png"
+                  src="/logo-fix.png"
                   alt="Logo Yayasan Al-Kalam"
                   fill
                   sizes="(max-width: 768px) 80px, 96px"
