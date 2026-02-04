@@ -55,7 +55,7 @@ export const strukturOrganisasi: StrukturOrganisasiData = {
       name: "Nama Sekretaris",
       title: "Sekretaris",
       subtitle: "Sekretaris",
-      imageSrc: "/logo-fix.png",
+      imageSrc: "/logo-fix.jpeg",
       bio: [
         "Profil singkat Sekretaris akan ditampilkan di sini.",
         "Silakan kirimkan foto dan biografi singkat (1–3 paragraf).",
@@ -65,7 +65,7 @@ export const strukturOrganisasi: StrukturOrganisasiData = {
       name: "Nama Bendahara",
       title: "Bendahara",
       subtitle: "Bendahara",
-      imageSrc: "/logo-fix.png",
+      imageSrc: "/logo-fix.jpeg",
       bio: [
         "Profil singkat Bendahara akan ditampilkan di sini.",
         "Silakan kirimkan foto dan biografi singkat (1–3 paragraf).",

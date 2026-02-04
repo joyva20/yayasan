@@ -50,7 +50,7 @@ export default function Footer() {
               {/* Logo */}
               <div className="flex-shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200 shadow-sm h-16 w-16 p-2">
                 <Image 
-                  src="/logo-fix.png" 
+                  src="/logo-fix.jpeg" 
                   alt="Logo Yayasan" 
                   width={44}
                   height={44}

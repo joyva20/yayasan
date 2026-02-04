@@ -59,7 +59,7 @@ export default function StrukturOrganisasiPage() {
               <div className="flex flex-col sm:flex-row items-start gap-8">
                 <div className="relative h-36 w-36 flex-shrink-0 overflow-hidden rounded-full bg-slate-100">
                   <Image
-                    src={member.imageSrc || "/logo-fix.png"}
+                    src={member.imageSrc || "/logo-fix.jpeg"}
                     alt={member.name}
                     fill
                     className="object-cover"
